@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#222A2A">
+  <meta name="description" content="Explore The Housing Commons interactive Nebraska resource map of housing organizations, programs, and services.">
+  <title>Resources | The Housing Commons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to main content</a>
+  <div class="site">
+    <header class="masthead">
+      <div class="mast-inner shell">
+        <a class="brand" href="index.html" aria-label="The Housing Commons home">THE HOUSING COMMONS</a>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation menu">☰</button>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="resources.html" aria-current="page">RESOURCES</a>
+          <a href="learn.html">LEARN</a><a href="model-explorer.html">MODEL EXPLORER</a>
+          <a href="commons.html">THE COMMONS</a>
+          <a href="about.html">ABOUT</a>
+        </nav>
+        <a class="utility-search" href="resources.html" aria-label="Go to resources page">⌖</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero page-hero--aqua resource-hero">
+        <div class="shell">
+          <h1>CONNECT TO YOUR NETWORK.</h1>
+          <p>Explore housing-related organizations, programs, and support across Nebraska.</p>
+        </div>
+      </section>
+
+      <section class="section-paper resource-map-section" aria-labelledby="resource-map-title">
+        <div class="shell">
+          <div class="resource-map-heading">
+            <div>
+              <span class="eyebrow">NEBRASKA / RESOURCE DIRECTORY</span>
+              <h2 id="resource-map-title">INTERACTIVE RESOURCE MAP</h2>
+            </div>
+            <a class="btn btn-lime resource-fullscreen" href="https://umap.openstreetmap.fr/en/map/nebraska-housing-commons-resource-map-map_1485254?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=datafilters&amp;captionBar=false&amp;captionMenus=true" target="_blank" rel="noopener noreferrer" aria-label="Open the Nebraska resource map in a new tab">OPEN FULL-SCREEN MAP <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <p class="resource-map-intro" id="map-instructions">Use the map's built-in filters to explore organizations and programs. Select a marker for details. If the map feels cramped on your device, open it in a separate tab.</p>
+
+          <div class="resource-map-frame-wrap">
+            <iframe
+              class="resource-map-frame"
+              title="Interactive Nebraska Housing Commons resource map"
+              aria-describedby="map-instructions"
+              src="https://umap.openstreetmap.fr/en/map/nebraska-housing-commons-resource-map-map_1485254?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=datafilters&amp;captionBar=false&amp;captionMenus=true"
+              allow="geolocation"
+              allowfullscreen
+              loading="eager"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+
+          <div class="resource-map-notes">
+            <p><strong>About the resource map:</strong> This interactive directory is a working prototype of housing-related resources in Nebraska. The map and its filters are provided through uMap.</p>
+            <p><strong>Data &amp; use notes:</strong> Entries are illustrative and may not be complete or current. Check with individual organizations before relying on information.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-dark section-pad">
+        <div class="shell">
+          <div class="section-row">
+            <h2>BROWSE RESOURCES BY FOCUS.</h2>
+            <p>These categories illustrate future ways to browse resources. For now, use the interactive map's own filters above.</p>
+          </div>
+          <div class="support-grid">
+            <article class="support-card"><h3>HOUSING PROGRAMS</h3><p>Resources and initiatives</p></article>
+            <article class="support-card"><h3>ORGANIZATIONS &amp; SERVICES</h3><p>Community providers and support</p></article>
+            <article class="support-card"><h3>TOOLS &amp; GUIDES</h3><p>Practical learning and references</p></article>
+            <article class="support-card"><h3>FUNDING &amp; SUPPORT</h3><p>Potential sources of assistance</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="shell"><span class="label">THE HOUSING COMMONS <span style="color:var(--lime)">*</span></span><span class="label">A STUDENT-DEVELOPED PROTOTYPE · NOT AN ESTABLISHED HOUSING SERVICE</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+  </div>
+</body>
+</html>

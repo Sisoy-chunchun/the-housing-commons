@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 470" role="img" aria-labelledby="title desc">
+<title id="title">Illustrated community-owned housing</title>
+<desc id="desc">An architectural line drawing of adjacent homes and a shared courtyard, with connecting paths and trees.</desc>
+<defs><pattern id="grain" width="15" height="15" patternUnits="userSpaceOnUse"><circle cx="1" cy="2" r="1" fill="#222A2A" opacity=".12"/></pattern></defs>
+<path d="M28 395 Q88 360 162 382 T322 387 T497 384 T658 391 L668 456 H15Z" fill="#CBD370"/>
+<path d="M48 211 L161 114 L277 211 V392 H48Z" fill="#F0ECDF" stroke="#222A2A" stroke-width="7"/><path d="M29 216L160 99L291 216" stroke="#222A2A" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M95 392V288H159V392" fill="#6CB6BB" stroke="#222A2A" stroke-width="6"/><path d="M191 265H247V321H191Z" fill="#93B9C4" stroke="#222A2A" stroke-width="6"/><path d="M207 266V321M191 293H247" stroke="#222A2A" stroke-width="3"/>
+<path d="M272 196 L410 93 L548 196 V392 H272Z" fill="#F2A02F" stroke="#222A2A" stroke-width="7"/><path d="M258 204L410 81L562 204" stroke="#222A2A" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M306 243H356V305H306ZM464 243H515V305H464Z" fill="#F0ECDF" stroke="#222A2A" stroke-width="6"/><path d="M331 243V305M306 274H356M489 243V305M464 274H515" stroke="#222A2A" stroke-width="3"/><path d="M382 392V275H444V392" fill="#93B9C4" stroke="#222A2A" stroke-width="6"/>
+<path d="M518 258L595 193L660 258V392H518Z" fill="#F0ECDF" stroke="#222A2A" stroke-width="7"/><path d="M509 264L594 186L671 264" stroke="#222A2A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M550 392V305H605V392" fill="#CBD370" stroke="#222A2A" stroke-width="6"/>
+<path d="M0 394H680" stroke="#222A2A" stroke-width="7"/>
+<path d="M175 394Q240 420 340 422 T490 394" fill="none" stroke="#222A2A" stroke-width="6" stroke-dasharray="10 10"/>
+<path d="M555 162V97M528 125L553 112L580 125" stroke="#222A2A" stroke-width="6" stroke-linecap="round"/><circle cx="559" cy="70" r="31" fill="#D4E94A" stroke="#222A2A" stroke-width="5"/>
+<path d="M48 390v-70M31 337L48 314L65 337" stroke="#222A2A" stroke-width="6"/><circle cx="48" cy="292" r="32" fill="#6CB6BB" stroke="#222A2A" stroke-width="6"/>
+<path d="M645 390v-53" stroke="#222A2A" stroke-width="5"/><circle cx="645" cy="315" r="28" fill="#CBD370" stroke="#222A2A" stroke-width="5"/>
+<path d="M26 438C109 425 160 451 224 439S379 431 440 438S606 431 662 439" stroke="#222A2A" stroke-width="4" fill="none"/>
+<path d="M0 0H680V470H0Z" fill="url(#grain)"/>
+</svg>

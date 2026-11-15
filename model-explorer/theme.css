@@ -1,0 +1,33 @@
+/* Charcoal & Signal: presentation only. Original layout rules remain in styles.css. */
+:root{
+ --paper:#F0ECDF;--white:#F0ECDF;--ink:#222A2A;--muted:#46534F;
+ --yellow:#D4E94A;--mint:#CBD370;--pink:#FF5C30;--lavender:#6CB6BB;--blue:#93B9C4;
+ --title:'Bricolage Grotesque','Arial Black',sans-serif;
+ --body:'Atkinson Hyperlegible Next',Arial,sans-serif;
+ --mono:'IBM Plex Mono',monospace;
+ font-family:var(--body);color:var(--paper);background:var(--ink);
+}
+body{background:var(--ink);color:var(--paper)}
+h1,h2,h3,.brand,.button,.text-button,.model-choice,.step-button,.scenario-button,
+.site-header nav a,.compare-controls select,.example-filter select{font-family:var(--title)}
+.eyebrow,.brand small,.status,.step-counter,.step-position,.step-button span,footer{font-family:var(--mono)}
+.site-header{background:var(--ink);color:var(--paper);border-bottom-color:#F0ECDF80}
+.brand{color:var(--yellow)}.brand-symbol{color:var(--ink)}
+.site-header nav a[aria-current=page]{color:var(--ink)}
+.hero h1 span{color:var(--ink)}.hero .square{background:var(--yellow)}
+.button,.text-button,.walkthrough,.scenario-result,.comparison-table,.example-card,.context-card,
+.compare-footnote,.reading-guide,.noscript{color:var(--ink)}
+.section-note{color:#D3D9CC}.walkthrough .location,.example-card .location,.context-card .location{color:var(--muted)}
+.compare-controls label,.example-filter{color:var(--paper)}
+.diagram{background-image:radial-gradient(#93B9C480 .8px,transparent .8px);border-color:#222A2A40}
+.diagram-key{color:var(--muted)}.key-line{background:var(--ink)}
+.point-list li::marker{color:var(--ink)}
+.step-controls{border-top-color:#222A2A50}
+.context-card .lesson{border-top-color:var(--ink)}
+.example-card .limit{color:var(--muted)}
+button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible{
+ outline:3px solid var(--aqua,#6CB6BB);outline-offset:5px;
+}
+.walkthrough :focus-visible,.example-card :focus-visible,.context-card :focus-visible,
+.reading-guide :focus-visible,.comparison-table :focus-visible{outline-color:#222A2A}
+@media print{body{background:var(--paper);color:var(--ink)}.section-note{color:var(--muted)}}
