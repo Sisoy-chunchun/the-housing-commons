@@ -130,10 +130,15 @@
   [a,b].forEach(m=>{html+='<th scope="col"><p class="eyebrow">'+esc(families[m.kind])+'</p><h3>'+esc(m.name)+'</h3><p class="location">'+esc(m.example||m.cases[0].name)+'</p><button type="button" class="text-button" data-explore="'+m.id+'">Explore this model '+arrow+'</button></th>';});html+='</tr></thead><tbody>';
   rows.forEach(([key,title])=>{html+='<tr><th scope="row">'+title+'</th><td data-model="'+esc(a.shortName)+'">'+esc(a.compare[key])+'</td><td data-model="'+esc(b.shortName)+'">'+esc(b.compare[key])+'</td></tr>';});html+='</tbody></table>';$('comparison').innerHTML=html;
  }
+ function contextLesson(c){
+  const text=esc(c.lesson);
+  if(!c.lessonLink)return text;
+  return text.replace('Grounded Solutions Network','<a href="'+esc(c.lessonLink)+'" target="_blank" rel="noopener noreferrer">Grounded Solutions Network</a>');
+ }
  function renderExamples(){
   $('example-filter').value=state.filter;const visible=state.filter==='all'?models:[byId[state.filter]];
   $('examples-grid').innerHTML=visible.flatMap(m=>m.cases.map(c=>'<article class="example-card" style="--card-color:var(--'+m.color+')"><div class="example-card-top">'+icon(modelIcon[m.id])+'<span class="status">'+esc(c.status)+'</span></div><div class="example-card-body"><h3>'+esc(c.name)+'</h3><p class="location">'+esc(c.location)+'</p><p class="summary">'+esc(c.summary)+'</p><p class="limit"><strong>Keep in view</strong>'+esc(c.limitation)+'</p><div class="example-card-links"><button type="button" class="text-button" data-explore="'+m.id+'">Explore the model '+arrow+'</button>'+link(c.url,'Source')+'</div></div></article>')).join('');
-  $('context-grid').innerHTML=data.contexts.map(c=>'<article class="context-card"><span class="status">'+esc(c.status)+'</span><h3>'+esc(c.title)+'</h3><p class="location">'+esc(c.place)+'</p><p>'+esc(c.body)+'</p><p class="lesson">'+esc(c.lesson)+'</p>'+link(c.url,'Read the source')+'</article>').join('');
+  $('context-grid').innerHTML=data.contexts.map(c=>'<article class="context-card"><span class="status">'+esc(c.status)+'</span><h3>'+esc(c.title)+'</h3><p class="location">'+esc(c.place)+'</p><p>'+esc(c.body)+'</p><p class="lesson">'+contextLesson(c)+'</p>'+link(c.url,'Read the source')+'</article>').join('');
  }
  function selectModel(id,reset){if(!byId[id])return;state.model=id;if(reset){state.step=0;state.scenario='values';}renderModel();setView('explore',false);$('announcer').textContent=byId[id].name+' selected.';}
  document.addEventListener('click',function(event){
