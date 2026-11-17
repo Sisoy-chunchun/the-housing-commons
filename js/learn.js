@@ -28,6 +28,22 @@ function renderPrecedentsAndProposals() {
     const location = field('p', 'learn-context-location', entry.place);
     const body = field('p', 'learn-context-body', entry.body);
     const lesson = field('p', 'learn-context-lesson', entry.lesson);
+    if (entry.lessonLink) {
+      const label = 'Grounded Solutions Network';
+      const position = entry.lesson.indexOf(label);
+      if (position !== -1) {
+        const link = document.createElement('a');
+        link.href = entry.lessonLink;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = label;
+        lesson.replaceChildren(
+          document.createTextNode(entry.lesson.slice(0, position)),
+          link,
+          document.createTextNode(entry.lesson.slice(position + label.length))
+        );
+      }
+    }
     const source = document.createElement('a');
     source.className = 'learn-context-source';
     source.textContent = 'Read the source';
