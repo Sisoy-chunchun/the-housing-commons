@@ -1,0 +1,126 @@
+/* About page: 1/3 sticky chapter navigation + 2/3 natural-height reading panel.
+   Loaded after the shared stylesheet to override the legacy full-width button layout. */
+.about-wrap.about-layout{
+  display:grid;
+  grid-template-columns:minmax(245px,32%) minmax(0,1fr);
+  align-items:start;
+  gap:clamp(1.25rem,2.5vw,2.2rem);
+  width:min(calc(100% - 2.2rem),1340px);
+  max-width:1340px;
+  margin-inline:auto;
+}
+.about-wrap.about-layout > .about-contents{
+  position:sticky;
+  top:calc(80px + 1rem);
+  align-self:start;
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  width:100%;
+  max-width:none;
+  max-height:calc(100dvh - 103px);
+  gap:.7rem;
+  margin:0;
+  padding:0 .55rem .5rem 0;
+  overflow-x:visible;
+  overflow-y:auto;
+  scrollbar-width:thin;
+}
+.about-wrap.about-layout .about-contents > .about-choice{
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  min-width:0;
+  min-height:62px;
+  padding:.7rem .9rem;
+  margin:0;
+  border:2px solid #222A2A;
+  border-radius:0;
+  background:var(--about-color,#D4E94A);
+  color:#222A2A;
+  text-align:left;
+  font:800 clamp(1.02rem,1.25vw,1.28rem)/1.15 var(--title);
+  letter-spacing:-.016em;
+  box-shadow:5px 5px 0 #222A2A;
+  cursor:pointer;
+  transition:transform .15s,box-shadow .15s;
+}
+.about-wrap.about-layout .about-contents > .about-choice::after{
+  content:'↗';
+  flex-shrink:0;
+  margin-left:.7rem;
+  font:800 1.4rem/1 var(--title);
+}
+.about-wrap.about-layout .about-contents > .about-choice[aria-selected="true"]{
+  border-left:7px solid #222A2A;
+  box-shadow:7px 7px 0 #222A2A;
+}
+.about-wrap.about-layout .about-contents > .about-choice[aria-selected="true"]::after{content:'→'}
+.about-wrap.about-layout .about-contents > .about-choice:hover{
+  transform:translate(-2px,-2px);
+  box-shadow:7px 7px 0 #222A2A;
+}
+.about-wrap.about-layout .about-contents > .about-choice:focus-visible{
+  outline:3px solid #185f72;
+  outline-offset:4px;
+}
+.about-wrap.about-layout > .about-panels{
+  min-width:0;
+  width:100%;
+  display:block;
+}
+.about-wrap.about-layout .about-panels > .about-tabpanel{
+  display:block;
+  box-sizing:border-box;
+  min-width:0;
+  width:100%;
+  min-height:clamp(520px,68vh,720px);
+  max-height:none;
+  margin:0;
+  padding:clamp(1.5rem,3.2vw,3rem);
+  border:3px solid #222A2A;
+  border-radius:0;
+  background:var(--about-color,#D4E94A);
+  color:#222A2A;
+  box-shadow:7px 7px 0 #222a2a38;
+  scroll-margin-top:calc(80px + 1rem);
+}
+.about-wrap.about-layout .about-panels > .about-tabpanel[hidden],
+.about-tabs-ready .about-wrap.about-layout .about-panels > .about-tabpanel:not(.is-active){
+  display:none!important;
+}
+.about-wrap.about-layout .about-tabpanel h2{
+  font:800 clamp(1.9rem,3vw,3rem)/1.06 var(--title);
+  letter-spacing:-.035em;
+  margin:0 0 1.5rem;
+}
+.about-wrap.about-layout .about-tabpanel p{
+  font:400 clamp(1rem,1.2vw,1.12rem)/1.68 var(--body);
+  max-width:75ch;
+  margin:0 0 1.25rem;
+}
+.about-wrap.about-layout .about-tabpanel p:last-child{margin-bottom:0}
+.about-wrap.about-layout .about-tabpanel .about-quote{
+  background:#222A2A;
+  color:#F0ECDF;
+  padding:clamp(1.2rem,2.4vw,2rem);
+  margin:1.5rem 0;
+  font:800 clamp(1.45rem,2.6vw,2.4rem)/1.1 var(--title);
+}
+.about-wrap.about-layout .about-stepper span:nth-child(even){background:#F0ECDF;color:#222A2A}
+@media(max-height:780px) and (min-width:901px){
+  .about-wrap.about-layout > .about-contents{gap:.5rem}
+  .about-wrap.about-layout .about-contents > .about-choice{min-height:55px;padding:.55rem .75rem;font-size:clamp(.95rem,1.08vw,1.15rem)}
+}
+@media(max-width:900px){
+  .about-wrap.about-layout{grid-template-columns:minmax(0,1fr);gap:1.6rem}
+  .about-wrap.about-layout > .about-contents{position:static;max-height:none;overflow:visible;gap:.65rem;padding-right:.5rem}
+  .about-wrap.about-layout .about-contents > .about-choice{min-height:58px;font-size:clamp(1rem,2.8vw,1.25rem)}
+  .about-wrap.about-layout .about-panels > .about-tabpanel{min-height:380px;padding:clamp(1.2rem,4.3vw,2rem);scroll-margin-top:90px}
+  .about-wrap.about-layout .about-tabpanel h2{font-size:clamp(1.9rem,4.9vw,2.8rem)}
+}
+@media(prefers-reduced-motion:reduce){
+  .about-wrap.about-layout .about-contents > .about-choice{transition:none}
+}
