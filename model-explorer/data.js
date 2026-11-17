@@ -1134,7 +1134,7 @@ window.HOUSING_DATA = {
       "place": "Deutsche Wohnen & Co. enteignen, Berlin, Germany",
       "body": "Redistribution of privately held corporate landlord assets into public ownership to serve community needs. Berlin’s proposal would transfer housing from large corporate landlords to a public body responsible for nonprofit management. Owners would receive compensation for transferred properties. These homes would be managed to support affordability and residents’ needs. Implementation would require legislation and resolution of legal challenges.",
       "lesson": "Housing socialization shifts existing homes from profit-driven ownership toward long-term public benefit. Public, nonprofit management can prioritize affordable rents and residents’ needs, with safeguards to keep housing dedicated to community use.",
-      "url": "https://www.peoplespolicyproject.org/project/a-plan-to-solve-the-housing-crisis-through-social-housing/"
+      "url": "https://www.goerg.de/en/insights/publications/30-09-2026/socialization-of-housing-companies-legal-analysis-of-the-current-debate"
     }
   ]
 };
