@@ -1106,15 +1106,16 @@ window.HOUSING_DATA = {
       "place": "Aluminum City Terrace, Pennsylvania, United States",
       "body": "Built by the federal government in 1941–1942 for defense workers, Aluminum City Terrace was subsequently sold under the Mutual Home Ownership Plan. The Library of Congress documents its continuing cooperative form.",
       "lesson": "Public development can establish housing that later moves into collective resident ownership. Lasting affordability still depends on its governing rules.",
-      "url": "https://loc.gov/pictures/item/pa2949/"
+      "url": "https://pittsburghorbit.com/2015/08/09/new-kensington-bauhaus-aluminum-city-terrace/"
     },
     {
       "id": "new-communities",
       "title": "Land security through community ownership",
       "status": "Historical precedent",
       "place": "New Communities, Georgia, United States",
-      "body": "Founded in 1969 through the civil rights movement, New Communities sought secure land and livelihoods for Black farmers and families facing dispossession. Its work became foundational to the U.S. community land trust movement.",
-      "lesson": "Community ownership can protect housing, livelihoods and collective self-determination together. Its history is broader than discounted home purchase.",
+      "body": "Founded in 1969 through the civil rights movement, New Communities sought secure land and livelihoods for Black farmers and families facing dispossession. Its work became foundational to the U.S. Community Land Trust (CLT) movement and is widely recognized as the first CLT in the U.S.",
+      "lesson": "Community land ownership can prevent displacement and protect the livelihoods of its members. CLT's are growing in popularity. Check out Grounded Solutions Network to learn more.",
+      "lessonLink": "https://groundedsolutions.org/community-land-trust-census/",
       "url": "https://sncclegacyproject.org/new-communities/"
     },
     {
