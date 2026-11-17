@@ -1132,9 +1132,9 @@ window.HOUSING_DATA = {
       "title": "Socializing existing corporate rental housing",
       "status": "Studied proposal",
       "place": "Deutsche Wohnen & Co. enteignen, Berlin, Germany",
-      "body": "Berlin’s socialization initiative proposes transferring large corporate housing portfolios to a public institution with tenant participation. A government-appointed commission studied the approach in 2023. The proposal is presented here as a model, not a completed transfer of housing.",
-      "lesson": "Existing investment housing could be converted into public-benefit ownership. Compensation, finance and democratic governance determine the practical result.",
-      "url": "https://content.dwenteignen.de/uploads/2025_09_26_dwe_vergesellschaftungsgesetz_fact_sheet_52d7d13b1a.pdf"
+      "body": "Redistribution of privately held corporate landlord assets into public ownership to serve community needs. Berlin’s proposal would transfer housing from large corporate landlords to a public body responsible for nonprofit management. Owners would receive compensation for transferred properties. These homes would be managed to support affordability and residents’ needs. Implementation would require legislation and resolution of legal challenges.",
+      "lesson": "Housing socialization shifts existing homes from profit-driven ownership toward long-term public benefit. Public, nonprofit management can prioritize affordable rents and residents’ needs, with safeguards to keep housing dedicated to community use.",
+      "url": "https://www.peoplespolicyproject.org/project/a-plan-to-solve-the-housing-crisis-through-social-housing/"
     }
   ]
 };
