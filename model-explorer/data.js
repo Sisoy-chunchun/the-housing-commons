@@ -1123,8 +1123,8 @@ window.HOUSING_DATA = {
       "title": "Universal mixed-income public housing",
       "status": "Studied proposal",
       "place": "Gowan and Cooper, United States, 2018",
-      "body": "The report Social Housing in the United States proposes expanding publicly owned housing across income groups. Higher payments from better-off residents would help support lower-income households while the public retains the homes.",
-      "lesson": "Cross-subsidy can support a broad public housing sector, but the achievable depth of affordability depends on costs, financing and public investment.",
+      "body": "Publicly owned rental housing available to residents across income levels. Cities rapidly increase housing stock to ease pressure on rents. Rent is scaled to income. Public financing supports construction, with development prioritizing vacant public land and abandoned properties to avoid displacing residents.",
+      "lesson": "Universal mixed-income housing expands affordable housing options while creating economically diverse communities. Higher rents from higher-income residents help support lower-income households, making public resources go further and sustaining affordability over time.",
       "url": "https://www.peoplespolicyproject.org/project/a-plan-to-solve-the-housing-crisis-through-social-housing/"
     },
     {
