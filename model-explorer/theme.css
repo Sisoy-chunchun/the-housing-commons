@@ -31,3 +31,5 @@ button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible{
 .walkthrough :focus-visible,.example-card :focus-visible,.context-card :focus-visible,
 .reading-guide :focus-visible,.comparison-table :focus-visible{outline-color:#222A2A}
 @media print{body{background:var(--paper);color:var(--ink)}.section-note{color:var(--muted)}}
+
+.context-card .lesson a{color:#165c68;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}.context-card .lesson a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
