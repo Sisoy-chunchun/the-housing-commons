@@ -62,3 +62,5 @@
 .learn-context-source:after{content:'↗';font:700 1.25rem var(--title)}
 .learn-context-source:focus-visible{outline:4px solid #32788a;outline-offset:4px}
 @media(max-width:760px){.learn-contexts-heading{grid-template-columns:1fr;gap:.8rem}.learn-context-grid{grid-template-columns:1fr}}
+
+.learn-context-lesson a{color:#195d68;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}.learn-context-lesson a:focus-visible{outline:3px solid #195d68;outline-offset:3px}
